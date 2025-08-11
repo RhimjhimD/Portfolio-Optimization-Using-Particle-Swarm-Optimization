@@ -6,7 +6,7 @@ import copy as c
 import sys
 
 #importing and arranging data
-av = pd.read_csv("C:/Rhimjhim/College/NTCC Sme 5/Final List of Companies.csv")
+av = pd.read_csv("Final List of Companies.csv")
 rc = av.shape[0]
 cc = av.shape[1]
 cl = av.columns.values.tolist()
@@ -99,4 +99,5 @@ fitness = fit
 bp = pso(fitness, 50, 10)
 print(bp)
 fitnessval = fitness(bp)
+
 print(fitnessval)
